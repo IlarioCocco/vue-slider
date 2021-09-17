@@ -3,3 +3,23 @@
     padding: 0px;
     box-sizing: border-box;
 }
+
+.container {
+    height: 100vh;   
+    background-color: rgb(232, 232, 232); 
+}
+
+.wrapper {
+    position: relative;
+    background-color: rgb(204, 204, 204);
+    margin: auto;
+}
+
+.carosello {
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    height: 480px;
+    width: 800px;
+    margin: auto;
+}
