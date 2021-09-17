@@ -7,19 +7,43 @@
 .container {
     height: 100vh;   
     background-color: rgb(232, 232, 232); 
+    display: flex;
 }
 
 .wrapper {
     position: relative;
-    background-color: rgb(204, 204, 204);
+    background-color: rgb(232, 232, 232);
     margin: auto;
+    display: flex;
 }
 
 .carosello {
     background-color: rgb(255, 255, 255);
-    display: flex;
-    align-items: center;
-    height: 480px;
-    width: 800px;
+    height: 500px;
+    width: 1000px;
     margin: auto;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.arrow-left,
+.arrow-right {
+    font-size: 30px;
+    padding: 10px;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+   
+}
+
+.circle {
+    height: 60px;
+    width: 140px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.193);
+    line-height:  60px;
+    text-align: center;
+    font-size: 25px;
+    color: white;
 }
