@@ -10,6 +10,11 @@
     display: flex;
 }
 
+h2 {
+    line-height: 100px;
+    color: grey;
+}
+
 .wrapper {
     position: relative;
     background-color: rgb(232, 232, 232);
@@ -31,7 +36,7 @@
 .arrow-left,
 .arrow-right {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     padding: 50px;
     align-items: center;
     display: flex;
@@ -49,6 +54,6 @@
     font-size: 25px;
     color: white;
     position: absolute;
-    bottom: 20px;
-    left: 400px;
+    bottom: 10px;
+    left: 420px;
 }
