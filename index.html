@@ -26,11 +26,11 @@
             <div id="root">
                 <div class="wrapper">
                     <div class="arrow-left">
-                        <i class="fas fa-chevron-left"></i>
+                        <i class="fas fa-chevron-left" @click="leftImg()"></i>
                     </div>
                     <div class="carosello">
                         <div class="img-slide">
-                            <img :src="image">
+                            <img :src="images[indexImg]">
                             <div class="circle">
                                 <i class="fas fa-circle"></i>
                                 <i class="fas fa-circle"></i>
@@ -40,7 +40,7 @@
                         </div>
                     </div>
                     <div class="arrow-right">
-                        <i class="fas fa-chevron-right"></i>
+                        <i class="fas fa-chevron-right" @click="rightImg()"></i>
                     </div>
                 </div>
             </div>
