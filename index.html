@@ -31,11 +31,9 @@
                     <div class="carosello">
                         <div class="img-slide">
                             <img :src="images[indexImg]">
-                            <div class="circle">
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
-                                <i class="fas fa-circle"></i>
+                            <h2 class="sardegna fw-lighter">visita la Sardegna</h2>
+                            <div class="circles">
+                                <i class="fas fa-circle" v-for= "(image, index) in images" :class="indexImg == index ? 'active' : ''"></i>
                             </div>
                         </div>
                     </div>

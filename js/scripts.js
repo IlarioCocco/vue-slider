@@ -20,9 +20,15 @@ const app = new Vue(
             rightImg: function() {
                 this.indexImg--;
 
-                if ( this.indexImg == -1 ) {
-                    this.indexImg = this.images.length -1;
+                if ( this.indexImg == - 1 ) {
+                    this.indexImg = this.images.length - 1;
                 }
+            },
+            isCircleActive: function (indexCircle) {
+                if ( this.indexImg == indexCircle ) {
+                    return 'active';
+                }
+                return '';
             }
-        }
+        },
 });
