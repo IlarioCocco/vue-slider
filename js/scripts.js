@@ -21,7 +21,7 @@ const app = new Vue(
                 this.indexImg--;
 
                 if ( this.indexImg == -1 ) {
-                    this.indexImg = 0;
+                    this.indexImg = this.images.length -1;
                 }
             }
         }
