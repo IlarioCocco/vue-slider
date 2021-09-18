@@ -6,7 +6,7 @@
 
 .container {
     height: 100vh;   
-    background-color: rgb(232, 232, 232); 
+    background-color: rgb(255, 255, 255); 
     display: flex;
 }
 
@@ -17,7 +17,7 @@
     display: flex;
 }
 
-.carosello {
+.carosello, img{
     background-color: rgb(255, 255, 255);
     height: 500px;
     width: 1000px;
@@ -25,12 +25,14 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    position: relative;
 }
 
 .arrow-left,
 .arrow-right {
-    font-size: 30px;
-    padding: 10px;
+    color: white;
+    font-size: 50px;
+    padding: 50px;
     align-items: center;
     display: flex;
     justify-content: space-between;
@@ -41,9 +43,12 @@
     height: 60px;
     width: 140px;
     border-radius: 15px;
-    background-color: rgba(0, 0, 0, 0.193);
+    background-color: rgba(0, 0, 0, 0.075);
     line-height:  60px;
     text-align: center;
     font-size: 25px;
     color: white;
+    position: absolute;
+    bottom: 20px;
+    left: 400px;
 }
