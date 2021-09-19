@@ -30,10 +30,10 @@
                     </div>
                     <div class="carosello">
                         <div class="img-slide">
-                            <img :src="images[indexImg]">
+                            <img :src="images[indexImage]">
                             <h2 class="sardegna fw-lighter">visita la Sardegna</h2>
                             <div class="circles">
-                                <i class="fas fa-circle" v-for= "(image, index) in images" :class="indexImg == index ? 'active' : ''"></i>
+                                <i class="fas fa-circle" v-for= "(index, Image) in images" :class="isCircleActive(index)" @click="change(index)" ></i>
                             </div>
                         </div>
                     </div>

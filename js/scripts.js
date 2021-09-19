@@ -7,28 +7,39 @@ const app = new Vue(
                     "https://content.skyscnr.com/m/7ce4f05a32e06519/original/GettyImages-177514864_doc.jpg?resize=1800px:1800px&quality=100",
                     "https://content.skyscnr.com/m/3f7608a679bf7fa1/original/GettyImages-100418761_doc.jpg?resize=1800px:1800px&quality=100"
                 ],
-            indexImg: 0
+            indexImage: 0
         },
         methods: {
             leftImg: function() {
-                this.indexImg++;
+                this.indexImage++;
 
-                if( this.indexImg >=  this.images.length ) {
-                    this.indexImg = 0;
+                if( this.indexImage >=  this.images.length ) {
+                    this.indexImage = 0;
                 }
             },
+
             rightImg: function() {
-                this.indexImg--;
+                this.indexImage--;
 
-                if ( this.indexImg == - 1 ) {
-                    this.indexImg = this.images.length - 1;
+                if ( this.indexImage == - 1 ) {
+                    this.indexImage = this.images.length - 1;
                 }
             },
-            isCircleActive: function (indexCircle) {
-                if ( this.indexImg == indexCircle ) {
+
+            isCircleActive: function(indexCircle) {
+                if ( this.indexImage == indexCircle ) {
                     return 'active';
                 }
                 return '';
-            }
-        },
+                }
+            },
+
+            change: function(index) {
+                console.log(index)
+                
+            },
+
+        mounted: function() {
+            alert("occhio");
+        }
 });
