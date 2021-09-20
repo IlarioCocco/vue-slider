@@ -29,8 +29,9 @@ const app = new Vue(
             isCircleActive: function(indexCircle) {
                 if ( this.indexImage == indexCircle ) {
                     return 'active';
-                }
-                return '';
+                } 
+                else {
+                    return '';
                 }
             },
 
@@ -38,7 +39,5 @@ const app = new Vue(
                 this.indexImage = indexCircle;
             },
 
-        // mounted: function() {
-        //     alert("cambio slide a tempo");
-        // }
+        }
 });
