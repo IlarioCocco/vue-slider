@@ -33,7 +33,7 @@
                             <img :src="images[indexImage]">
                             <h2 class="sardegna fw-lighter">visita la Sardegna</h2>
                             <div class="circles">
-                                <i class="fas fa-circle" v-for= "(index, Image) in images" :class="isCircleActive(index)" @click="change(index)" ></i>
+                                <i class="fas fa-circle" v-for= "(index, Image) in images" :class="isCircleActive(index)" @click="changeImage(index)"></i>
                             </div>
                         </div>
                     </div>

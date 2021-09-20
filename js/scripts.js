@@ -34,8 +34,8 @@ const app = new Vue(
                 }
             },
 
-            change: function(index) {
-                console.log(index)
+            changeImage: function(indexCircle) {
+                
                 
             },
 
