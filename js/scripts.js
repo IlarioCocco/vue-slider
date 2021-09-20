@@ -35,11 +35,10 @@ const app = new Vue(
             },
 
             changeImage: function(indexCircle) {
-                
-                
+                this.indexImage = indexCircle;
             },
 
-        mounted: function() {
-            alert("occhio");
-        }
+        // mounted: function() {
+        //     alert("cambio slide a tempo");
+        // }
 });
